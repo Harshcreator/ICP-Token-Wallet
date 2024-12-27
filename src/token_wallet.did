@@ -1,0 +1,7 @@
+service : {
+    init: (principal) -> ();
+    transfer: (principal, nat64) -> (variant { Ok: null; Err: text });
+    receive_tokens: (principal, nat64) -> (variant { Ok: null; Err: text });
+    balance: () -> (nat64) query;
+    balance_of: (principal) -> (nat64) query;
+}

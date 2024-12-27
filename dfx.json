@@ -1,0 +1,23 @@
+{
+    "canisters": {
+        "token_wallet": {
+            "type": "rust",
+            "package": "token_wallet",
+            "candid": "src/token_wallet.did",
+            "wasm": "target/wasm32-unknown-unknown/release/token_wallet.wasm",
+            "init": "(principal \"2vxsx-fae\")"
+        }
+    },
+    "defaults": {
+        "build": {
+            "packtool": "",
+            "args": ""
+        }
+    },
+    "networks": {
+        "local": {
+            "bind": "127.0.0.1:8000"
+        }
+    },
+    "version": 1
+}   
